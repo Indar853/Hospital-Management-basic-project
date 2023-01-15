@@ -57,7 +57,7 @@ def no_index():
 def new_doctor():
 	print('Adding new doctor in file doctor')
 	df=pd.read_csv("Doctor.csv")
-	df.at['5',:]=[105,'Dr. Geeta',50,'Surgery',9899065266]
+	df.loc[len(df)]=[105,'Dr. Geeta',50,'Surgery',9899065266]
 	print(df)
 
 def new_colnam():
